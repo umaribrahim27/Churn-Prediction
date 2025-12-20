@@ -1,0 +1,71 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# =========================
+# Virtual Environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# =========================
+# OS / Editor files
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs / cache
+# =========================
+*.log
+.cache/
+
+# =========================
+# Data (do NOT commit datasets)
+# =========================
+data/raw/
+data/processed/
+
+# =========================
+# MLflow
+# =========================
+# NOTE:
+# For grading, MLflow outputs are expected,
+# so we KEEP mlruns/ tracked.
+# Uncomment only if needed later.
+# mlruns/
+# mlflow.db
+
+# =========================
+# Models
+# =========================
+# For grading, generated models are required,
+# so we KEEP models/ tracked.
+# Uncomment only if models become too large.
+# models/
+
+# =========================
+# Reports / exports
+# =========================
+*.pdf
+*.docx
