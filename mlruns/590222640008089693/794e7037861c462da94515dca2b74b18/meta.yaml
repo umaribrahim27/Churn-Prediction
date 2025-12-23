@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/seecsy/ai_project_method/mlruns/590222640008089693/794e7037861c462da94515dca2b74b18/artifacts
+end_time: 1766502739275
+entry_point_name: ''
+experiment_id: '590222640008089693'
+lifecycle_stage: active
+run_id: 794e7037861c462da94515dca2b74b18
+run_name: unequaled-cat-600
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766502735504
+status: 3
+tags: []
+user_id: seecsy

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/seecsy/ai_project_method/mlruns/590222640008089693/4f7b641c78b94b42b23f0d1bf9f7650d/artifacts
+end_time: 1766502786529
+entry_point_name: ''
+experiment_id: '590222640008089693'
+lifecycle_stage: active
+run_id: 4f7b641c78b94b42b23f0d1bf9f7650d
+run_name: calm-crab-740
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766502783331
+status: 3
+tags: []
+user_id: seecsy

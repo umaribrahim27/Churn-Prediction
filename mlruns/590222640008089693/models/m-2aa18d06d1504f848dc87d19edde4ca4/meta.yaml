@@ -1,0 +1,10 @@
+artifact_location: file:///Users/seecsy/ai_project_method/mlruns/590222640008089693/models/m-2aa18d06d1504f848dc87d19edde4ca4/artifacts
+creation_timestamp: 1766503082677
+experiment_id: '590222640008089693'
+last_updated_timestamp: 1766503084327
+model_id: m-2aa18d06d1504f848dc87d19edde4ca4
+model_type: null
+name: model
+source_run_id: dc5f8b9363c14b2bbba05a1051610c93
+status: 2
+status_message: null

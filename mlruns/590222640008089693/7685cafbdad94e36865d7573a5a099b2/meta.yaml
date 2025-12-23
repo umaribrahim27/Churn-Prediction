@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/seecsy/ai_project_method/mlruns/590222640008089693/7685cafbdad94e36865d7573a5a099b2/artifacts
+end_time: 1766503049161
+entry_point_name: ''
+experiment_id: '590222640008089693'
+lifecycle_stage: active
+run_id: 7685cafbdad94e36865d7573a5a099b2
+run_name: judicious-stag-599
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766503047321
+status: 3
+tags: []
+user_id: seecsy

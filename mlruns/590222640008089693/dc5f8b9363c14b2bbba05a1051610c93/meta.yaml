@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/seecsy/ai_project_method/mlruns/590222640008089693/dc5f8b9363c14b2bbba05a1051610c93/artifacts
+end_time: 1766503084328
+entry_point_name: ''
+experiment_id: '590222640008089693'
+lifecycle_stage: active
+run_id: dc5f8b9363c14b2bbba05a1051610c93
+run_name: brawny-worm-962
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766503082580
+status: 3
+tags: []
+user_id: seecsy

@@ -4,6 +4,8 @@ import joblib
 import pandas as pd
 import mlflow
 import mlflow.sklearn
+from datetime import datetime
+
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
@@ -24,13 +26,20 @@ def train(processed_path: str, target_col: str, model_out: str, test_size: float
         X, y, test_size=test_size, random_state=random_state, stratify=y if y.nunique() <= 20 else None
     )
 
-    model = LogisticRegression(max_iter=200, n_jobs=None)
+    model = LogisticRegression(max_iter=500, n_jobs=None)
+    
+    repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    mlflow.set_tracking_uri("file:" + os.path.join(repo_root, "mlruns"))
+    
+    mlflow.set_experiment("Churn_Project")            # new clean experiment folder
+
 
     with mlflow.start_run():
+        mlflow.set_tag("run_name", f"LR_maxiter_{10000}")
         mlflow.log_param("model", "LogisticRegression")
         mlflow.log_param("test_size", test_size)
         mlflow.log_param("random_state", random_state)
-        mlflow.log_param("max_iter", 200)
+        mlflow.log_param("max_iter", 500)
 
         model.fit(X_train, y_train)
         preds = model.predict(X_test)
@@ -60,7 +69,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--processed", default="data/processed/churn_processed.csv")
     parser.add_argument("--target", default="Churn")
-    parser.add_argument("--model_out", default="models/churn_model.pkl")
+    stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    parser.add_argument("--model_out", default=f"models/churn_lr_{stamp}.pkl")
     parser.add_argument("--test_size", type=float, default=0.2)
     parser.add_argument("--random_state", type=int, default=42)
     args = parser.parse_args()
